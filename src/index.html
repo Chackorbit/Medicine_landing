@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="../dist/output.css" rel="stylesheet">
+
+</head>
+
+<body class=" flex flex-col font-popp bg-[#F7FCFD]">
+    <header class="lg:w-[1280px] flex justify-between mt-[20px] mx-auto mb-[95px] px-[50px]">
+        <div class="flex"><img class="mr-[54px]" src="/src/icons/Group 215.svg" alt="logo">
+            <ul class="flex items-center whitespace-nowrap gap-8 font-medium text-fs-16 text-[#0006]">
+                <li><a href="">Home</a></li>
+                <li><a href="">Our Services</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+        </div>
+
+        <button class="px-[30px] py-[12px] rounded-[40px] bg-new-primary text-white" type="button">Make
+            Appointment</button>
+    </header>
+
+    <main>
+
+        <section class="lg:w-[1280px] flex justify-between mb-[140px] mx-auto px-[50px]">
+            <div class="flex flex-col">
+
+                <div class="flex gap-[32px] flex-col mb-[52px]">
+                    <h1 class="w-[522px] text-fs-72 font-bold">Feel Comfort Be Healthy</h1>
+                    <p class="w-[509px] text-fs-20 font-normal text-[#0007]">Our professional team will take care of
+                        you, we value
+                        your time and health.</p>
+                </div>
+
+                <ul class="w-[624px] grid grid-cols-2 mb-[52px] pl-[52px] py-[52px] bg-[#F4F5F4] rounded-[30px]">
+                    <li class="flex items-start mb-[31px]">
+                        <img class="mr-[12px]" src="/src/icons/Calendar.svg" width="30" alt="calendar">
+                        <div>
+                            <p class="font-medium text-fs-16 text-[#0008]">Make an Appointment</p>
+                            <p class="text-fs-14 text-[#0007]">Select best time for you.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start mb-[31px]">
+                        <img class="mr-[12px]" src="/src/icons/2-User.svg" alt="users">
+                        <div>
+                            <p class="font-medium text-fs-16 text-[#0008]">Find the Best Doctor</p>
+                            <p class="text-fs-14 text-[#0007]">find the best doctor in a minute</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <img class="mr-[12px]" src="/src/icons/Location.svg" alt="location">
+                        <div>
+                            <p class="font-medium text-fs-16 text-[#0008]">Visit the clinic</p>
+                            <p class="text-fs-14 text-[#0007]">take care of your issues</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <img class="mr-[12px]" src="/src/icons/Message.svg" alt="message">
+                        <div>
+                            <p class="font-medium text-fs-16 text-[#0008]">Ask Questions</p>
+                            <p class="text-fs-14 text-[#0007]">Ask questions any time</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="flex">
+                    <button
+                        class="flex items-center mr-[52px] px-[30px] py-[12px] rounded-[40px] bg-new-primary text-white"
+                        type="button"><span class="block mr-[20px]">
+                            Make
+                            Appointment </span><span><img src="/src/icons/arrow-right.svg" alt=""></span>
+                    </button>
+
+                    <div class="text-fs-16 font-medium text-brown">
+                        <p class="mb-[12px]">Mon-Fri &nbsp;&nbsp;&nbsp;10AM-9PM</p>
+                        <p class="">Sat &nbsp;&nbsp;&nbsp;10AM-2PM</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="">
+                <img src="/src/icons/img/Rectangle-1.png" width="473px" alt="doctor_hero">
+            </div>
+        </section>
+
+        <section class="lg:w-[1280px] flex justify-between flex-col mx-auto px-[50px] mb-[140px]">
+            <div class="flex justify-between items-baseline mb-[80px]">
+                <h2 class="font-bold text-fs-48">Our Services</h2>
+                <div>
+                    <button
+                        class="prev bg-new-primary rounded-[50%] rotate-180 fill-black-primary opacity-50 hover:opacity-90">
+                        <svg width="60" height="60">
+                            <use xlink:href="/src/icons/iconmonstr-arrow-25.svg#arrow" />
+                        </svg>
+                    </button>
+                    <button class="next bg-new-primary rounded-[50%] fill-black-primary opacity-50 hover:opacity-90">
+                        <svg width="60" height="60">
+                            <use xlink:href="/src/icons/iconmonstr-arrow-25.svg#arrow" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="w-[1180px] overflow-hidden" id="carousel">
+                <ul class="list flex w-[2000px] h-[341px] gap-[32px]  duration-300">
+                    <!-- <li><img class="block" src="/src/icons/img/Rectangle-5.png" alt=""></li> -->
+                    <li class="">
+                        <img class="block mb-[32px]" src="/src/icons/img/Rectangle-5.png" alt="">
+                        <p class="inline-block font-medium text-fs-24">Immediate Care</p>
+                    </li>
+                    <li class="gap-[32px]"><img class="block mb-[32px]" src="/src/icons/img/Rectangle-6.png" alt="">
+                        <p class="inline-block font-medium text-fs-24">Dental Care</p>
+                    </li>
+                    <li class="gap-[32px]"><img class="block mb-[32px]" src="/src/icons/img/Rectangle-7.png" alt="">
+                        <p class="inline-block font-medium text-fs-24">Diagnostic Center</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="lg:w-[1280px] flex justify-between flex-col mx-auto px-[50px] mb-[140px]">
+            <h2 class="font-bold text-fs-48 mb-[84px]">Why us?</h2>
+
+            <ul class="flex flex-wrap justify-between gap-y-[64px] text-fs-16 ">
+                <li
+                    class="w-[372px] px-[32px] pt-[32px] pb-[55px] flex flex-col gap-[22px] fill-blue rounded-[30px]  hover:shadow-color-shadow hover:shadow-xl bg-white">
+                    <div
+                        class="w-[100px] h-[100px] flex justify-center items-center rounded-[50%] bg-new-primary bg-opacity-10">
+                        <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+                            <use href="/src/icons/InlineSprite.svg#src-7"></use>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-fs-24">DNA Diagnostics</h3>
+                    <p class="opacity-70">We are proud to announce that we provide high quality diagnostics for DNA</p>
+                </li>
+                <li
+                    class="w-[372px] px-[32px] py-[32px 55px] pt-[32px] pb-[55px] flex flex-col gap-[22px] fill-blue rounded-[30px]  hover:shadow-color-shadow hover:shadow-xl bg-white">
+                    <div
+                        class="w-[100px] h-[100px] flex justify-center items-center rounded-[50%] bg-new-primary bg-opacity-10">
+                        <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+                            <use href="/src/icons/InlineSprite.svg#src-12"></use>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-fs-24">Insurance</h3>
+                    <p class="opacity-70">You can get our insurance to not care of any financial difficulties in future.
+                    </p>
+                </li>
+                <li
+                    class="w-[372px] px-[32px] py-[32px 55px] pt-[32px] pb-[55px] flex flex-col gap-[22px] fill-blue rounded-[30px]  hover:shadow-color-shadow hover:shadow-xl bg-white">
+                    <div
+                        class="w-[100px] h-[100px] flex justify-center items-center rounded-[50%] bg-new-primary bg-opacity-10">
+                        <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+                            <use href="/src/icons/InlineSprite.svg#src-5"></use>
+                        </svg>
+                    </div>
+
+                    <h3 class="font-semibold text-fs-24">Medical Support</h3>
+                    <p class="opacity-70">We have a huge amount of high quality medicine from Germany</p>
+                </li>
+                <li
+                    class="w-[372px] px-[32px] py-[32px 55px] pt-[32px] pb-[55px] flex flex-col gap-[22px] fill-blue rounded-[30px]  hover:shadow-color-shadow hover:shadow-xl bg-white">
+                    <div
+                        class="w-[100px] h-[100px] flex justify-center items-center rounded-[50%] bg-new-primary bg-opacity-10">
+                        <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+                            <use href="/src/icons/InlineSprite.svg#src-10"></use>
+                        </svg>
+                    </div>
+
+                    <h3 class="font-semibold text-fs-24">Lab Achievements</h3>
+                    <p class="opacity-70">iMedical has 12 laboratory achievements that have world level impact in
+                        medicine.</p>
+                </li>
+                <li
+                    class="w-[372px] px-[32px] py-[32px 55px] pt-[32px] pb-[55px] flex flex-col gap-[22px] fill-blue rounded-[30px]  hover:shadow-color-shadow hover:shadow-xl bg-white">
+                    <div
+                        class="w-[100px] h-[100px] flex justify-center items-center rounded-[50%] bg-new-primary bg-opacity-10">
+                        <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+                            <use href="/src/icons/InlineSprite.svg#src-30"></use>
+                        </svg>
+                    </div>
+
+                    <h3 class="font-semibold text-fs-24">24/7 Clean</h3>
+                    <p class="opacity-70">We care about having a clean and safe rooms for our patients</p>
+                </li>
+                <li
+                    class="w-[372px] px-[32px] py-[32px 55px] pt-[32px] pb-[55px] flex flex-col gap-[22px] fill-blue rounded-[30px]  hover:shadow-color-shadow hover:shadow-xl bg-white">
+                    <div
+                        class="w-[100px] h-[100px] flex justify-center items-center rounded-[50%] bg-new-primary bg-opacity-10">
+                        <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+                            <use href="/src/icons/InlineSprite.svg#src-23"></use>
+                        </svg>
+                    </div>
+
+                    <h3 class="font-semibold text-fs-24">Training Routine</h3>
+                    <p class="opacity-70">Our doctors will help you get personal training routine to get the best
+                        results</p>
+                </li>
+            </ul>
+        </section>
+
+        <section
+            class="lg:w-[1280px] flex justify-between flex-col  mx-auto px-[50px] pt-[70px] pb-[140px] bg-brown bg-opacity-5">
+            <div class="flex justify-between mb-[90px]">
+                <h2 class="font-bold text-fs-48">Our Qualified Doctors</h2>
+                <button
+                    class="flex items-center mr-[52px] px-[32px] py-[16px] rounded-[40px]   border-brown text-brown fill-brown"
+                    type="button"><span class="block mr-[20px]">
+                        See All Doctors </span><span>
+                        <svg width="20" height="21">
+                            <use href="/src/icons/arrow-right.svg#arrow-right"></use>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+
+            <ul class="flex flex-wrap justify-between gap-y-[64px] text-fs-16 ">
+                <li
+                    class="w-[372px] px-[32px] pt-[32px] pb-[55px] flex flex-col fill-blue rounded-[30px]  hover:shadow-[#CF7D4E40] hover:shadow-xl bg-white">
+                    <div
+                        class="w-[100px] h-[100px] flex justify-center items-center rounded-[50%] bg-new-primary bg-opacity-10">
+                        <img src="/src/icons/img/Rectangle-22.png" alt="doc1">
+                    </div>
+                    <h3 class="font-semibold text-fs-24">Dr. Jane Nicholson</h3>
+                    <p>Leading Diagnostic Doctor</p>
+                    <p>+500 Happy patients</p>
+                    <p>iMedical Central Clinic, LA</p>
+                </li>
+
+                <li
+                    class="w-[372px] px-[32px] py-[32px 55px] pt-[32px] pb-[55px] flex flex-col gap-[22px] fill-blue rounded-[30px]  hover:shadow-[#CF7D4E40] hover:shadow-xl bg-white">
+                    <div
+                        class="w-[100px] h-[100px] flex justify-center items-center rounded-[50%] bg-new-primary bg-opacity-10">
+                        <img src="/src/icons/img/Rectangle-22-(1).png" alt="doc2">
+                    </div>
+                    <h3 class="font-semibold text-fs-24">Dr. Alison Pretty</h3>
+                    <p>Consultant Dentist</p>
+                    <p>+320 Happy patients</p>
+                    <p>iMedical Central Clinic, LA</p>
+                </li>
+
+                <li
+                    class="w-[372px] px-[32px] py-[32px 55px] pt-[32px] pb-[55px] flex flex-col gap-[22px] fill-blue rounded-[30px]  hover:shadow-[#CF7D4E40] hover:shadow-xl bg-white">
+                    <div
+                        class="w-[100px] h-[100px] flex justify-center items-center rounded-[50%] bg-new-primary bg-opacity-10">
+                        <img src="/src/icons/img/Rectangle-22-(2).png" alt="doc3">
+                    </div>
+                    <h3 class="font-semibold text-fs-24">Dr. Rebecca Flows</h3>
+                    <p>Leading Diagnostic Doctor</p>
+                    <p>+900 Happy patients</p>
+                    <p>iMedical Central Clinic, LA</p>
+                </li>
+                <li
+                    class="w-[372px] px-[32px] py-[32px 55px] pt-[32px] pb-[55px] flex flex-col gap-[22px] fill-blue rounded-[30px]  hover:shadow-[#CF7D4E40] hover:shadow-xl bg-white">
+                    <div
+                        class="w-[100px] h-[100px] flex justify-center items-center rounded-[50%] bg-new-primary bg-opacity-10">
+                        <img src="/src/icons/img/Rectangle-22-(3).png" alt="doc4">
+                    </div>
+
+                    <h3 class="font-semibold text-fs-24">Dr. Maria Anderson</h3>
+                    <p>Leading Diagnostic Doctor</p>
+                    <p>+500 Happy patients</p>
+                    <p>iMedical Central Clinic, LA</p>
+                </li>
+                <li
+                    class="w-[372px] px-[32px] py-[32px 55px] pt-[32px] pb-[55px] flex flex-col gap-[22px] fill-blue rounded-[30px]  hover:shadow-[#CF7D4E40] hover:shadow-xl bg-white">
+                    <div
+                        class="w-[100px] h-[100px] flex justify-center items-center rounded-[50%] bg-new-primary bg-opacity-10">
+                        <img src="/src/icons/img/Rectangle-22-(4).png" alt="doc5">
+                    </div>
+
+                    <h3 class="font-semibold text-fs-24">Dr. Derek Mendes</h3>
+                    <p>Consultant Dentist</p>
+                    <p>+320 Happy patients</p>
+                    <p>iMedical Central Clinic, LA</p>
+                </li>
+                <li
+                    class="w-[372px] px-[32px] py-[32px 55px] pt-[32px] pb-[55px] flex flex-col gap-[22px] fill-blue rounded-[30px]  hover:shadow-[#CF7D4E40] hover:shadow-xl bg-white">
+                    <div
+                        class="w-[100px] h-[100px] flex justify-center items-center rounded-[50%] bg-new-primary bg-opacity-10">
+                        <img src="/src/icons/img/Rectangle-22-(5).png" alt="doc6">
+                    </div>
+
+                    <h3 class="font-semibold text-fs-24">Dr. Bob Singer</h3>
+                    <p>Leading Diagnostic Doctor</p>
+                    <p>+900 Happy patients</p>
+                    <p>iMedical Central Clinic, LA</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="bg-black-primary">
+            <ul
+                class="lg:w-[1280px] flex justify-between  mx-auto px-[50px] py-[70px] mb-[140px] text-white text-fs-64 font-bold">
+                <li class="h-[198px] text-center  px-[64px]">
+                    <p>99%</p>
+                    <p class="text-blue-primary text-fs-24 font-normal">Positive Feedback</p>
+                </li>
+                <li class="h-[198px] text-center border-r-[1px] border-l-[1px] border-white/20 px-[64px]">
+                    <p>2,300+</p>
+                    <p class="text-blue-primary text-fs-24 font-normal">Happy Patients a week</p>
+                </li>
+                <li class="h-[198px] px-[64px] text-center">
+                    <p>43</p>
+                    <p class="text-blue-primary text-fs-24 font-normal">Professional Doctors</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="lg:w-[1280px] flex justify-between flex-col mx-auto px-[50px] mb-[140px]">
+            <div class="flex justify-between items-baseline mb-[80px]">
+                <h2 class="font-bold text-fs-48">Testimonials</h2>
+                <div>
+                    <button
+                        class="prev bg-new-primary rounded-[50%] rotate-180 fill-black-primary opacity-50 hover:opacity-90">
+                        <svg width="60" height="60">
+                            <use xlink:href="/src/icons/iconmonstr-arrow-25.svg#arrow" />
+                        </svg>
+                    </button>
+                    <button class="next bg-new-primary rounded-[50%] fill-black-primary opacity-50 hover:opacity-90">
+                        <svg width="60" height="60">
+                            <use xlink:href="/src/icons/iconmonstr-arrow-25.svg#arrow" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="w-[1180px] overflow-hidden" id="carousel">
+                <ul class="list flex w-[2000px] gap-[32px]  duration-300">
+                    <li class="w-[574px] flex p-[32px] rounded-[20px] bg-brown/5">
+                        <img class="w-[100px] h-[100px] mr-[24px]" src="/src/icons/img/Ellipse10.png" alt="">
+                        <div>
+                            <p class="inline-block mb-[12px] font-medium text-fs-24">Sofia Potter</p>
+                            <svg class="mb-[20px]" width="136" height="24">
+                                <use xlink:href="/src/icons/stars-5.svg#star"></use>
+                            </svg>
+                            <p class="text-fs-18 opacity-70">These guys are incredible to work with. Like
+                                seriously! They did everything so good, that I did not even imagine it
+                                would come up this awesome! Really looking forward to working with them again.</p>
+                        </div>
+                    </li>
+
+                    <li class="w-[574px] flex p-[32px] rounded-[20px] bg-brown/5">
+                        <img class="w-[100px] h-[100px] mr-[24px]" src="/src/icons/img/Ellipse9.png" alt="">
+                        <div>
+                            <p class="inline-block mb-[12px] font-medium text-fs-24">Jordan Browler</p>
+                            <svg class="mb-[20px]" width="136" height="24">
+                                <use xlink:href="/src/icons/stars-5.svg#star"></use>
+                            </svg>
+                            <p class="text-fs-18 opacity-70">These guys are incredible to work with. Like
+                                seriously! They did everything so good, that I did not even imagine it
+                                would come up this awesome! Really looking forward to working with them again.</p>
+                        </div>
+                    </li>
+
+
+
+                    <!-- <li class="gap-[32px]"><img class="block mb-[32px]" src="/src/icons/img/Rectangle-7.png" alt="">
+                        <p class="inline-block font-medium text-fs-24">Diagnostic Center</p>
+                    </li> -->
+                </ul>
+            </div>
+        </section>
+
+        <section class="bg-brown/5">
+            <div class="lg:w-[1280px] flex justify-center items-center flex-col mx-auto px-[50px] pb-[140px]">
+                <h2>Make Appointment</h2>
+                <form class="flex justify-center w-[776px] flex-wrap gap-x-[32px] gap-y-[30px]" action="#">
+                    <input
+                        class="form-input w-[372px] h-[50px] bg-[#FCFCFC] border-[1px] border-[#00000005] outline-none rounded-[10px]"
+                        placeholder="First Name" type="text">
+                    <input
+                        class="form-input w-[372px] h-[50px] bg-[#FCFCFC] border-[1px] border-[#00000005] rounded-[10px]"
+                        placeholder="Last Name" type="text">
+                    <input
+                        class="form-input w-[372px] h-[50px] bg-[#FCFCFC] border-[1px] border-[#00000005] rounded-[10px]"
+                        placeholder="Email" type="email">
+                    <input
+                        class="form-input w-[372px] h-[50px] bg-[#FCFCFC] border-[1px] appearance-none border-[#00000005] rounded-[10px]"
+                        placeholder="Phone" type="number">
+
+                    <div class="relative max-w-sm rounded-[10px]">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
+                            <svg class="w-[30px] h-[30px] fill-[#7D8B8D]" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="./icons/Calendar.svg#calendar"></use>
+                            </svg>
+                        </div>
+                        <input datepicker datepicker-format="dd/mm/yyyy" type="text"
+                            class="w-[372px] h-[50px] bg-[#FCFCFC] border-[1px] border-[#00000005] outline-none rounded-[10px] focus:ring-blue-500 focus:border-blue-500 block pl-[64px] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Appointment Date">
+                    </div>
+
+                    <div class="relative max-w-sm rounded-[10px]" data-te-with-icon="false" data-te-timepicker-init
+                        data-te-input-wrapper-init id="timepicker-just-input">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
+                            <svg fill="none" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="./icons/Time-Circle.svg#timeCircle"></use>
+                            </svg>
+                        </div>
+                        <input type="text"
+                            class="w-[372px] h-[50px] bg-[#FCFCFC] border-[1px] border-[#00000005] outline-none rounded-[10px] focus:ring-blue-500 focus:border-blue-500 block pl-[64px] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                            data-te-toggle="timepicker-just-input" id="form15" placeholder="Appointment Time" />
+                    </div>
+
+                    <textarea id="message" rows="4"
+                        class="block p-5 w-full text-sm resize-none bg-[#FCFCFC] rounded-[10px] border-[1px] border-[#00000005] focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Describe what you’re looking for..."></textarea>
+
+                    <button
+                        class="flex gap-[20px] items-center px-[30px] py-[12px] rounded-[40px] bg-new-primary text-white text-center"
+                        type="button">Send
+                        <span>
+                            <svg width="20" height="21">
+                                <use xlink:href="./icons/Send.svg#send"></use>
+                            </svg>
+                        </span></button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="lg:w-[1280px] flex justify-between mx-auto px-[50px] pt-[70px] mb-[40px]">
+                <div class="mr-[73px]">
+                    <img class="block mb-[30px]" src="../src/icons/Group 215.svg" width="150" alt="logo">
+                    <div class="flex flex-col gap-[20px] text-fs-18 text-black/60 ">
+                        <p>1429 Something Bridge, LA 4281</p>
+                        <a class="text-black-primary" href="tel:3214283213902">Call: (321) 428 321 3902</a>
+                        <div class="flex gap-[19px]">
+                            <a class="w-[50px] h-[50px] flex justify-center items-center bg-black-primary/10 rounded-[50%]"
+                                href="">
+                                <svg width="20" height="20">
+                                    <use xlink:href="../src/icons/096-twitter.svg#twitter"></use>
+                                </svg>
+                            </a>
+                            <a class="w-[50px] h-[50px] flex justify-center items-center bg-black-primary/10 rounded-[50%]"
+                                href="">
+                                <svg width="20" height="20">
+                                    <use xlink:href="../src/icons/023-facebook.svg#facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="w-[50px] h-[50px] flex justify-center items-center bg-black-primary/10 rounded-[50%]"
+                                href="">
+                                <svg width="20" height="20">
+                                    <use xlink:href="../src/icons/052-linkedin.svg#linkedin"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mr-[130px] text-fs-18 text-black/60">
+                    <p class="inline-block mb-[36px] text-fs-24 font-semibold text-black">Explore</p>
+                    <div class="flex flex-col gap-[20px]">
+                        <p>Feature</p>
+                        <p>About us</p>
+                        <p>FAQs</p>
+                        <p>Contact</p>
+                    </div>
+                </div>
+                <div class="mr-[104px] text-fs-18 text-black/60">
+                    <p class="inline-block mb-[36px] text-fs-24 font-semibold text-black">Legal</p>
+                    <div class="flex flex-col gap-[20px]">
+                        <p>Privacy Policy</p>
+                        <p>Terms of Services</p>
+                        <p>Documentations</p>
+                        <p>Help Center</p>
+                    </div>
+                </div>
+
+                <div class="text-fs-18 text-black/60">
+                    <p class="inline-block mb-[36px] text-fs-24 font-semibold text-black">Subscribe</p>
+                    <div class="flex flex-col gap-[20px]">
+                        <p class="block w-[238px]">Subscribe to get the latest
+                            news from us</p>
+                        <div>subscribe</div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="lg:w-[1280px] flex justify-between mx-auto px-[50px] pt-[32px]  pb-[70px] border-solid border-t-[1px] text-black-primary/40">
+                <p>© 2021 iMedical, All Rights Reserved</p>
+                <div class="flex gap-[32px]">
+                    <p>Privacy Policy</p>
+                    <p>Terms of Services</p>
+                    <p>Accesibility</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="/src/js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/datepicker.min.js"></script>
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <!-- <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+</body>
+
+</html>
