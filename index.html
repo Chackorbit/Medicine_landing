@@ -90,7 +90,9 @@
                 <ul
                     class="tab:w-[624px] w-[366px] tab:grid tab:grid-cols-2 tab:mb-[52px] mb-[40px] tab:pl-[52px] pl-[40px] tab:py-[52px] py-[40px] bg-[#F4F5F4] rounded-[30px]">
                     <li class="flex items-start mb-[31px]">
-                        <img class="mr-[12px]" src="./src/icons/Calendar.svg" width="30" alt="calendar">
+                        <svg class="mr-[12px] w-[30px] h-[30px]" fill="#CF7D4E">
+                            <use xlink:href="./src/icons/Calendar.svg#calendar"></use>
+                        </svg>
                         <div>
                             <p class="font-medium text-fs-16 text-[#0008]">Make an Appointment</p>
                             <p class="text-fs-14 text-[#0007]">Select best time for you.</p>
@@ -372,16 +374,14 @@
                 <div class="flex justify-between items-baseline pb-[80px]">
                     <h2 class="font-bold text-fs-48">Testimonials</h2>
                     <div>
-                        <button
-                            class="prev bg-new-primary rounded-[50%] rotate-180 fill-black-primary opacity-50 hover:opacity-90">
-                            <svg width="60" height="60">
-                                <use href="./src/icons/iconmonstr-arrow-25.svg#arrow" />
+                        <button class="prev rotate-180 fill-black-primary opacity-50 hover:opacity-90">
+                            <svg class="w-[30px] tab:w-[60px] h-[30px] tab:h-[60px] ">
+                                <use href="./src/icons/Arrow-Right-CircleNew.svg#arrow-new" />
                             </svg>
                         </button>
-                        <button
-                            class="next bg-new-primary rounded-[50%] fill-black-primary opacity-50 hover:opacity-90">
-                            <svg width="60" height="60">
-                                <use href="./src/icons/iconmonstr-arrow-25.svg#arrow" />
+                        <button class="next fill-black-primary opacity-50 hover:opacity-90">
+                            <svg class="w-[30px] tab:w-[60px] h-[30px] tab:h-[60px]">
+                                <use href="./src/icons/Arrow-Right-CircleNew.svg#arrow-new" />
                             </svg>
                         </button>
                     </div>
