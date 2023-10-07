@@ -10,27 +10,85 @@ const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 let listElems = document.querySelectorAll(".list li");
 
-/* конфигурация */
-let width = 372; // ширина картинки
-let count = 3; // видимое количество изображений
+let offset = 0;
 
-let position = 0; // положение ленты прокрутки
+function nextFunc() {
+  //сдвиг вправо
+  if (window.innerWidth >= 1280) {
+    return;
+  }
+
+  if (window.innerWidth < 1024) {
+    offset += 372;
+    if (offset > 744) {
+      offset = 0;
+    }
+    list.style.left = -offset + "px";
+  }
+  if (1024 <= window.innerWidth) {
+    offset += 372;
+    if (offset > 372) {
+      offset = 0;
+    }
+    list.style.left = -offset + "px";
+  }
+}
 
 function prevFunc() {
   // сдвиг влево
-  position += width * count;
-  // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
-  position = Math.min(position, 0);
-  list.style.marginLeft = position + "px";
-}
-function nextFunc() {
-  position -= width * count;
+  if (window.innerWidth >= 1280) {
+    return;
+  }
+  if (window.innerWidth < 1024) {
+    offset -= 372;
+    if (offset < 0) {
+      offset = 744;
+    }
+    list.style.left = -offset + "px";
+  }
 
-  position = Math.max(position, -width * (listElems.length - count));
-  list.style.marginLeft = position + "px";
+  if (1024 <= window.innerWidth) {
+    offset -= 372;
+    if (offset < 0) {
+      offset = 372;
+    }
+    list.style.left = -offset + "px";
+  }
 }
 
-next.addEventListener("click", nextFunc);
-prev.addEventListener("click", prevFunc);
+next?.addEventListener("click", nextFunc);
+prev?.addEventListener("click", prevFunc);
 
 /////////////////////////////////////////////////
+
+const openBtn = document.querySelector("#open-menu");
+const closeBtn = document.querySelector("#close-menu");
+const menu = document.querySelector("#menu");
+
+function stopScrollBy() {
+  window.scrollTo({ top: 0 });
+}
+
+function openMenu() {
+  openBtn.classList.toggle("hidden");
+  const haveClass = openBtn.classList.contains("hidden");
+  if (haveClass) {
+    menu.classList.remove("hidden");
+  }
+  window.addEventListener("scroll", stopScrollBy);
+
+  closeBtn.classList.toggle("hidden");
+}
+
+function closeMenu() {
+  closeBtn.classList.toggle("hidden");
+  const haveClass = closeBtn.classList.contains("hidden");
+  if (haveClass) {
+    menu.classList.add("hidden");
+  }
+  openBtn.classList.toggle("hidden");
+  window.removeEventListener("scroll", stopScrollBy);
+}
+
+openBtn.addEventListener("click", openMenu);
+closeBtn.addEventListener("click", closeMenu);

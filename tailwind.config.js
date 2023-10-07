@@ -1,20 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.{html,js}",
+    "./**/*.{html,js}",
     "./node_modules/flowbite/**/*.js",
     "./node_modules/tw-elements/dist/js/**/*.js",
   ],
   theme: {
     screens: {
-      sm: "480px",
-      md: "768px",
-      lg: "1280px",
+      mob: "480px",
+      tab: "1024px",
+      pc: "1280px",
     },
     colors: {
       "blue-primary": "#12CCF4",
       "black-primary": "#062126",
-      orange: "#E5661E",
+      "orange-new": "#E5661E",
       blue: "#0F97B5",
       brown: "#CF7D4E",
       "new-primary": "#24BEE0",
